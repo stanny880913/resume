@@ -1,480 +1,649 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="light">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Stanny's Resume</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stanny Ho — Software Engineer</title>
     <link rel="icon" type="image/x-icon" href="assets/img/bell.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script
-      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Google fonts-->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
-      type="text/css"
     />
+
+    <!-- Font Awesome -->
     <link
-      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
       rel="stylesheet"
-      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom-modern.css" />
   </head>
-  <body id="page-top">
-    <!-- Navigation-->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-      id="sideNav"
-    >
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Min-Hsuan HO</span>
-        <span class="d-none d-lg-block"
-          ><img
-            class="img-fluid img-profile rounded-circle mx-auto mb-2"
-            src="assets/img/profile.jpg"
-            alt="..."
-        /></span>
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education"
-              >Education</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience"
-              >Experience</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
+  <body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
 
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests"
-              >Interests</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards"
-              >Certifications</a
-            >
-          </li>
+    <!-- Navigation -->
+    <header class="nav-header" id="navbar">
+      <nav class="nav-container">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>S<span class="logo-dot">.</span
+          >H<span class="logo-bracket">/&gt;</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#awards" class="nav-link">Awards</a></li>
         </ul>
-      </div>
-    </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
-      <!-- About-->
-      <section class="resume-section" id="about">
-        <div class="resume-section-content">
-          <h1 class="mb-0">
-            Min-Hsuan HO
-            <span class="text-primary">Stanny</span>
-          </h1>
-          <div class="subheading mb-5">
-            Software Engin
-            <a href="mailto:name@email.com" style="color: rgb(215 141 76)"
-              >stanny11122@email.com</a
-            >
-          </div>
-          
-          <!-- Experience -->
-          <div class="timeline-item">
-            <div class="timeline-icon bg-primary">
-              <i class="fas fa-cogs text-white"></i>
-            </div>
-            <div class="timeline-content">
-              <h3 class="mb-2 text-primary">Experience</h3>
-              <p class="text-muted">Designing, developing, and maintaining high-performance applications</p>
-              <ul>
-                <li>Deploying and managing applications via <strong>Azure</strong></li>
-                <li>Implementing <strong>CI/CD pipelines</strong> to enhance efficiency</li>
-                <li>Self-learning <strong>Kubernetes</strong> for advanced container orchestration</li>
-              </ul>
-            </div>
-          </div>
-          
-          <!-- Master's Degree -->
-          <div class="timeline-item">
-            <div class="timeline-icon bg-success">
-              <i class="fas fa-graduation-cap text-white"></i>
-            </div>
-            <div class="timeline-content">
-              <h3 class="mb-2 text-success">Master's Degree</h3>
-              <p class="text-muted">
-                <strong>National Taiwan University of Science and Technology (NTUST)</strong> - M.S. in Electronic Engineering
-              </p>
-              <ul>
-                <li>Research: <strong>Camera-Radar Fusion for 3D Object Detection</strong></li>
-                <li>Developed deep learning algorithms for <strong>multimodal sensor fusion</strong></li>
-                <li>Thesis: <em>"3D Multimodal Object Detection Based on Cross-Attention Feature Fusion"</em></li>
-                <li>Accepted for presentation at <strong>IEEE ICRA</strong> (International Conference on Robotics and Automation)</li>
-              </ul>
-            </div>
-          </div>
-          
-          <!-- Bachelor's Degree -->
-          <div class="timeline-item">
-            <div class="timeline-icon bg-warning">
-              <i class="fas fa-university text-white"></i>
-            </div>
-            <div class="timeline-content">
-              <h3 class="mb-2 text-warning">Bachelor's Degree</h3>
-              <p class="text-muted">
-                <strong>Feng Chia University (FCU)</strong> - B.S. in Computer Science
-              </p>
-              <ul>
-                <li>Interned at <strong>Titan Technology</strong> as a product developer</li>
-                <li>Developed a <strong>Single Sign-On (SSO) website</strong> using <strong>Vue.js</strong> & <strong>.NET</strong></li>
-                <li>Worked in an agile environment following <strong>Scrum methodology</strong></li>
-              </ul>
-            </div>
-          </div>
-          
-          
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon" id="themeIcon"></i>
+          </button>
+          <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            aria-label="Toggle menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
 
-          <div class="social-icons">
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <div class="hero-bg">
+          <div class="gradient-orb orb-1"></div>
+          <div class="gradient-orb orb-2"></div>
+          <div class="gradient-orb orb-3"></div>
+          <div class="grid-pattern"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-badge animate-on-scroll">
+            <span class="status-dot"></span>
+            Open to opportunities
+          </div>
+          <h1 class="hero-title animate-on-scroll">
+            Hi, I'm <span class="gradient-text">Stanny Ho</span>
+          </h1>
+          <p class="hero-subtitle animate-on-scroll">
+            Software Engineer crafting elegant solutions with
+            <span class="typed-wrapper">
+              <span class="typed-text" id="typedText"></span>
+              <span class="typed-cursor">|</span>
+            </span>
+          </p>
+          <div class="hero-cta animate-on-scroll">
+            <a href="#about" class="btn-primary-glow">
+              <span>Explore My Work</span>
+              <i class="fas fa-arrow-down"></i>
+            </a>
+            <a href="mailto:stanny11122@email.com" class="btn-outline-glow">
+              <i class="fas fa-envelope"></i>
+              <span>Get in Touch</span>
+            </a>
+          </div>
+          <div class="hero-social animate-on-scroll">
             <a
-              class="social-icon"
+              href="https://www.linkedin.com/in/min-hsuan-ho-stanny-ho/"
+              target="_blank"
+              class="social-link"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/stanny880913"
+              target="_blank"
+              class="social-link"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://line.me/ti/p/7otfCAf3Uc"
+              target="_blank"
+              class="social-link"
+              aria-label="Line"
+            >
+              <i class="fab fa-line"></i>
+            </a>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <span>Scroll Down</span>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-tag">01</span>
+            <h2 class="section-title">About Me</h2>
+            <div class="section-line"></div>
+          </div>
+          <div class="about-grid">
+            <div class="about-text animate-on-scroll">
+              <p class="about-lead">
+                Passionate software engineer with expertise in
+                <strong>full-stack development</strong>,
+                <strong>cloud technologies</strong>, and
+                <strong>machine learning</strong>. I specialize in designing,
+                developing, and maintaining high-performance applications with
+                modern technologies.
+              </p>
+              <p>
+                With a Master's degree in Electronic Engineering from NTUST, I
+                bring strong research experience in
+                <strong>Camera-Radar Fusion for 3D Object Detection</strong> and
+                deep learning. My work has been published at
+                <strong>IEEE ICRA</strong>, combining academic excellence with
+                practical software engineering skills.
+              </p>
+              <div class="about-highlights">
+                <div class="highlight-item">
+                  <div class="highlight-icon"><i class="fas fa-code"></i></div>
+                  <div class="highlight-label">Web Development</div>
+                </div>
+                <div class="highlight-item">
+                  <div class="highlight-icon"><i class="fas fa-cloud"></i></div>
+                  <div class="highlight-label">Cloud Operations</div>
+                </div>
+                <div class="highlight-item">
+                  <div class="highlight-icon"><i class="fas fa-robot"></i></div>
+                  <div class="highlight-label">AI Applications</div>
+                </div>
+              </div>
+            </div>
+            <div class="about-tech animate-on-scroll">
+              <h3 class="tech-title">Core Technologies</h3>
+              <div class="tech-pills">
+                <span class="tech-pill">MVC</span>
+                <span class="tech-pill">ASP.NET</span>
+                <span class="tech-pill">C#</span>
+                <span class="tech-pill">Azure</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Flask</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">PyTorch</span>
+                <span class="tech-pill">Multi-Sensor Object Detection</span>
+                <span class="tech-pill">AI Autonomous Vehicle Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section class="section section-alt" id="education">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-tag">02</span>
+            <h2 class="section-title">Education</h2>
+            <div class="section-line"></div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item animate-on-scroll">
+              <div class="timeline-marker">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-date">
+                  <i class="far fa-calendar-alt"></i>
+                  Aug 2022 — Aug 2024
+                </div>
+                <h3 class="timeline-title">
+                  National Taiwan University of Science and Technology
+                </h3>
+                <p class="timeline-subtitle">
+                  Master's Degree — Electronic and Computer Engineering
+                </p>
+                <p class="timeline-desc">
+                  Research focus on Camera-Radar Fusion for 3D Object Detection.
+                  Published findings at IEEE ICRA international conference.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Deep Learning</span>
+                  <span class="tag">Sensor Fusion</span>
+                  <span class="tag">Computer Vision</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item animate-on-scroll">
+              <div class="timeline-marker">
+                <i class="fas fa-university"></i>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-date">
+                  <i class="far fa-calendar-alt"></i>
+                  Aug 2018 — Jun 2022
+                </div>
+                <h3 class="timeline-title">Feng Chia University</h3>
+                <p class="timeline-subtitle">
+                  Bachelor's Degree — Computer Science and Information
+                  Engineering
+                </p>
+                <p class="timeline-desc">
+                  Honored as Phi Tau Phi member for outstanding academic
+                  achievement.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Computer Science</span>
+                  <span class="tag">Software Engineering</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-tag">03</span>
+            <h2 class="section-title">Experience</h2>
+            <div class="section-line"></div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item animate-on-scroll">
+              <div class="timeline-marker">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-date">
+                  <i class="far fa-calendar-alt"></i>
+                  Dec 2023 — Oct 2024
+                </div>
+                <h3 class="timeline-title">AI Software Engineer Intern</h3>
+                <p class="timeline-subtitle">
+                  Automotive Research & Testing Center (ARTC) · Taiwan
+                </p>
+                <p class="timeline-desc">
+                  Developed camera and radar fusion applied to a multi-task
+                  autonomous driving AI system. Responsible for designing and
+                  optimizing deep learning algorithms for multimodal sensor
+                  fusion while also serving as a product manager, collaborating
+                  with the company to discuss various requirements.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Deep Learning</span>
+                  <span class="tag">Sensor Fusion</span>
+                  <span class="tag">Autonomous Driving</span>
+                  <span class="tag">Product Management</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item animate-on-scroll">
+              <div class="timeline-marker">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-date">
+                  <i class="far fa-calendar-alt"></i>
+                  Feb 2022 — Aug 2022
+                </div>
+                <h3 class="timeline-title">Web Developer Intern</h3>
+                <p class="timeline-subtitle">TitanSoft</p>
+                <p class="timeline-desc">
+                  Developed an internal web application to unify the company's
+                  internal websites, providing a centralized portal for easy
+                  navigation. Implemented a full-stack solution using Vue.js for
+                  the frontend and C# for the backend with RESTful APIs. The
+                  application was automatically deployed and maintained via
+                  CI/CD pipelines.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Vue.js</span>
+                  <span class="tag">C#</span>
+                  <span class="tag">RESTful API</span>
+                  <span class="tag">CI/CD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="section section-alt" id="projects">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-tag">04</span>
+            <h2 class="section-title">Projects</h2>
+            <div class="section-line"></div>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card animate-on-scroll">
+              <div class="project-icon">
+                <i class="fas fa-car"></i>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span class="project-org">ARTC</span>
+                  <span class="project-date">Jan 2024 — Oct 2024</span>
+                </div>
+                <h3 class="project-title">Multi Sensor Object Detection</h3>
+                <p class="project-role">Developer & Product Manager</p>
+                <p class="project-desc">
+                  Managed and developed sensor fusion algorithms. Led the
+                  product roadmap and coordinated between teams.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Machine Learning</span>
+                  <span class="tag">ROS</span>
+                  <span class="tag">Camera-Radar Fusion</span>
+                  <span class="tag">PM</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card animate-on-scroll">
+              <div class="project-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span class="project-org">Micromax</span>
+                  <span class="project-date">Aug 2022 — Jan 2023</span>
+                </div>
+                <h3 class="project-title">Autonomous Car Developer</h3>
+                <p class="project-desc">
+                  Implemented object detection models and calibrated sensors for
+                  autonomous vehicle systems.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Deep Learning</span>
+                  <span class="tag">Data Labeling</span>
+                  <span class="tag">BSW Development</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card animate-on-scroll">
+              <div class="project-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span class="project-org">Spark Taiwan | NTUST</span>
+                  <span class="project-date">Jan 2023 — Aug 2023</span>
+                </div>
+                <h3 class="project-title">AI Model Detect Web Application</h3>
+                <p class="project-desc">
+                  Built a web interface for real-time AI model inference and
+                  visualization.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Flask</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">Docker</span>
+                  <span class="tag">Nginx</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-tag">05</span>
+            <h2 class="section-title">Skills</h2>
+            <div class="section-line"></div>
+          </div>
+          <div class="skills-bento">
+            <div class="bento-card bento-large animate-on-scroll">
+              <div class="bento-icon"><i class="fas fa-code"></i></div>
+              <h3>Web Development</h3>
+              <div class="bento-skills">
+                <span class="skill-chip">Vue 3</span>
+                <span class="skill-chip">ASP.NET Core</span>
+                <span class="skill-chip">C#</span>
+                <span class="skill-chip">HTML / CSS</span>
+                <span class="skill-chip">Flask</span>
+                <span class="skill-chip">Nginx</span>
+                <span class="skill-chip">RESTful API</span>
+              </div>
+            </div>
+            <div class="bento-card animate-on-scroll">
+              <div class="bento-icon"><i class="fas fa-microchip"></i></div>
+              <h3>Machine Learning & AI</h3>
+              <div class="bento-skills">
+                <span class="skill-chip">PyTorch</span>
+                <span class="skill-chip">Object Detection</span>
+                <span class="skill-chip">Sensor Fusion</span>
+                <span class="skill-chip">ROS</span>
+                <span class="skill-chip">OpenCV</span>
+              </div>
+            </div>
+            <div class="bento-card animate-on-scroll">
+              <div class="bento-icon"><i class="fas fa-server"></i></div>
+              <h3>DevOps & Tools</h3>
+              <div class="bento-skills">
+                <span class="skill-chip">Docker</span>
+                <span class="skill-chip">Git</span>
+                <span class="skill-chip">CI/CD</span>
+                <span class="skill-chip">Agile / Scrum</span>
+                <span class="skill-chip">Linux</span>
+              </div>
+            </div>
+            <div class="bento-card bento-wide animate-on-scroll">
+              <div class="bento-icon"><i class="fas fa-layer-group"></i></div>
+              <h3>Tech Stack</h3>
+              <div class="tech-stack-row">
+                <div class="tech-icon-item">
+                  <i class="fab fa-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="tech-icon-item">
+                  <i class="fas fa-hashtag"></i>
+                  <span>C#</span>
+                </div>
+                <div class="tech-icon-item">
+                  <i class="fas fa-fire"></i>
+                  <span>PyTorch</span>
+                </div>
+                <div class="tech-icon-item">
+                  <i class="fab fa-docker"></i>
+                  <span>Docker</span>
+                </div>
+                <div class="tech-icon-item">
+                  <i class="fab fa-microsoft"></i>
+                  <span>Azure</span>
+                </div>
+                <div class="tech-icon-item">
+                  <i class="fab fa-linux"></i>
+                  <span>Linux</span>
+                </div>
+                <div class="tech-icon-item">
+                  <i class="fas fa-database"></i>
+                  <span>SQL</span>
+                </div>
+                <div class="tech-icon-item">
+                  <i class="fab fa-git-alt"></i>
+                  <span>Git</span>
+                </div>
+                <div class="tech-icon-item">
+                  <i class="fas fa-flask"></i>
+                  <span>Flask</span>
+                </div>
+                <div class="tech-icon-item">
+                  <i class="fas fa-eye"></i>
+                  <span>OpenCV</span>
+                </div>
+                <div class="tech-icon-item">
+                  <i class="fas fa-cogs"></i>
+                  <span>ROS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Awards & Certifications -->
+      <section class="section section-alt" id="awards">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-tag">06</span>
+            <h2 class="section-title">Certifications & Awards</h2>
+            <div class="section-line"></div>
+          </div>
+          <div class="awards-grid">
+            <div class="award-card animate-on-scroll">
+              <div class="award-icon award-blue">
+                <i class="fab fa-microsoft"></i>
+              </div>
+              <div class="award-content">
+                <h3>Microsoft Certified: Azure Fundamentals</h3>
+                <p class="award-org">Microsoft · Issued Jul 2025</p>
+                <p class="award-desc">Exam AZ-900</p>
+              </div>
+            </div>
+            <div class="award-card animate-on-scroll">
+              <div class="award-icon award-gold">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="award-content">
+                <h3>ICRA Conference Publication</h3>
+                <p class="award-org">
+                  IEEE International Conference on Robotics and Automation
+                </p>
+                <p class="award-desc">
+                  Recognized for research contributions in autonomous driving —
+                  Camera-Radar Fusion for 3D Object Detection.
+                </p>
+              </div>
+            </div>
+            <div class="award-card animate-on-scroll">
+              <div class="award-icon award-purple">
+                <i class="fas fa-medal"></i>
+              </div>
+              <div class="award-content">
+                <h3>Phi Tau Phi Honor Member</h3>
+                <p class="award-org">113th Year, Republic of China</p>
+                <p class="award-desc">
+                  Prestigious academic honor society membership recognizing
+                  outstanding scholastic achievement.
+                </p>
+              </div>
+            </div>
+            <div class="award-card animate-on-scroll">
+              <div class="award-icon award-blue">
+                <i class="fas fa-language"></i>
+              </div>
+              <div class="award-content">
+                <h3>TOEIC</h3>
+                <span class="award-badge">Score: 845</span>
+              </div>
+            </div>
+            <div class="award-card animate-on-scroll">
+              <div class="award-icon award-green">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="award-content">
+                <h3>GEPT Intermediate</h3>
+                <span class="award-badge badge-green">Passed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interests Section -->
+      <section class="section" id="interests">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <span class="section-tag">07</span>
+            <h2 class="section-title">Interests</h2>
+            <div class="section-line"></div>
+          </div>
+          <div class="interests-grid">
+            <div class="interest-card animate-on-scroll">
+              <div class="interest-icon">
+                <i class="fas fa-person-running"></i>
+              </div>
+              <h3>Focus & Perseverance</h3>
+              <p>
+                Avid sports enthusiast who enjoys running, cycling, badminton,
+                hiking, and scuba diving. These activities sharpen my
+                discipline, endurance, and teamwork — qualities I bring into
+                every project. Exploring the outdoors and underwater worlds
+                keeps me energized and inspired to tackle new challenges.
+              </p>
+            </div>
+            <div class="interest-card animate-on-scroll">
+              <div class="interest-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3>Technology & Learning</h3>
+              <p>
+                Deeply interested in exploring new technologies and staying
+                current with software development advancements. Dedicated to
+                studying cloud computing, containerization, and AI applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="logo-bracket">&lt;</span>S<span class="logo-dot"
+              >.</span
+            >H<span class="logo-bracket">/&gt;</span>
+          </div>
+          <div class="footer-links">
+            <a
               href="https://www.linkedin.com/in/min-hsuan-ho-080633240/"
               target="_blank"
               ><i class="fab fa-linkedin-in"></i
             ></a>
-            <a
-              class="social-icon"
-              href="https://github.com/stanny880913"
-              target="_blank"
+            <a href="https://github.com/stanny880913" target="_blank"
               ><i class="fab fa-github"></i
             ></a>
-            <a
-              class="social-icon"
-              href="https://line.me/ti/p/7otfCAf3Uc"
-              target="_blank"
-              ><i class="fab fa-line"></i
+            <a href="mailto:stanny11122@email.com"
+              ><i class="fas fa-envelope"></i
             ></a>
           </div>
+          <p class="footer-copy">&copy; 2026 Min-Hsuan Ho.</p>
         </div>
-      </section>
-      <hr class="m-0" />
-      <!-- Education -->
-      <section class="resume-section" id="education">
-        <div class="resume-section-content">
-          <h2 class="mb-5 text-primary">Education</h2>
+      </div>
+    </footer>
 
-          <!-- Master's Degree -->
-          <div class="timeline-item">
-            <div class="timeline-icon bg-success">
-              <i class="fas fa-graduation-cap text-white"></i>
-            </div>
-            <div class="timeline-content">
-              <h3 class="mb-0 text-success">
-                National Taiwan University of Science and Technology - NTUST
-              </h3>
-              <div class="subheading mb-3">Master's Degree</div>
-              <div>Electronic and Computer Engineering</div>
-              <div class="mt-3">
-                <span class="text-primary">August 2022 - August 2024</span>
-              </div>
-            </div>
-          </div>
-
-          <br />
-
-          <!-- Bachelor's Degree -->
-          <div class="timeline-item">
-            <div class="timeline-icon bg-warning">
-              <i class="fas fa-university text-white"></i>
-            </div>
-            <div class="timeline-content">
-              <h3 class="mb-0 text-warning">Feng Chia University - FCU</h3>
-              <div class="subheading mb-3">Bachelor's Degree</div>
-              <div>Computer Science and Information Engineering</div>
-              <div class="mt-3">
-                <span class="text-primary">August 2018 - June 2022</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <hr class="m-0" />
-      <!-- Experience-->
-      <section class="resume-section" id="experience">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Experience</h2>
-
-          <div class="d-flex flex-column flex-md-row justify-content-between">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Web Developer Intern</h3>
-              <div class="subheading mb-3">TitanSoft</div>
-              <p>
-                We developed an internal web application aimed at unifying the
-                company's internal websites, providing a centralized window for
-                easy navigation to other sites. Employing a frontend-backend
-                separation, we utilized Vue.js for the frontend and C# for the
-                backend, utilizing APIs to meet the web application's
-                requirements. Upon completion, the application was automatically
-                deployed and maintained on the company server through CI/CD.
-                Throughout the development process, we employed agile
-                development methodologies, which provided me with valuable
-                learning experiences.
-              </p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">February 2022 - Augest 2022</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr class="m-0" />
-
-      <!-- Projects -->
-      <section class="resume-section" id="projects">
-        <div class="resume-section-content">
-          <h2 class="mb-5 text-primary">Projects</h2>
-
-          <!-- Multi Sensor Object Detection -->
-          <div class="timeline-item">
-            <div class="timeline-icon bg-info">
-              <i class="fas fa-cogs text-white"></i>
-            </div>
-            <div class="timeline-content">
-              <h3 class="mb-0 text-info">Multi Sensor Object Detection Developer & Product Manager</h3>
-              <div class="subheading mb-3">Automotive Research & Testing Center (ARTC)</div>
-              <p>
-                <strong>Skills:</strong> Machine Learning, Data Labeling, Object Detection, ROS, Camera Radar Calibration, Object Detection, Project Management & Reporting Skills
-              </p>
-              <div>
-                <span class="text-primary">January 2024 - October 2024</span>
-              </div>
-            </div>
-          </div>
-
-          <br />
-
-          <!-- Autonomous Car Developer -->
-          <div class="timeline-item">
-            <div class="timeline-icon bg-success">
-              <i class="fas fa-car text-white"></i>
-            </div>
-            <div class="timeline-content">
-              <h3 class="mb-0 text-success">Autonomous Car Developer</h3>
-              <div class="subheading mb-3">Micromax</div>
-              <p>
-                <strong>Skills:</strong> Machine Learning, Data Labeling, Object Detection, ROS, Camera Radar Calibration, BSW Development, Reporting Skills
-              </p>
-              <div>
-                <span class="text-primary">August 2022 - January 2023</span>
-              </div>
-            </div>
-          </div>
-
-          <br />
-
-          <!-- AI Model Detect Web Developer -->
-          <div class="timeline-item">
-            <div class="timeline-icon bg-warning">
-              <i class="fas fa-laptop-code text-white"></i>
-            </div>
-            <div class="timeline-content">
-              <h3 class="mb-0 text-warning">AI Model Detect Web Developer</h3>
-              <div class="subheading mb-3">Spark Taiwan | NTUST</div>
-              <p>
-                <strong>Skills:</strong> Flask, Python, Gunicorn, Nginx, Docker, Machine Learning
-              </p>
-              <div>
-                <span class="text-primary">January 2023 - August 2023</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-      <hr class="m-0" />
-
-      <!-- Skills -->
-      <section class="resume-section" id="skills">
-        <div class="resume-section-content">
-          <h2 class="mb-5 text-primary">Skills</h2>
-
-          <!-- Programming Languages & Tools -->
-          <div class="subheading mb-3 text-info">Programming Languages & Tools</div>
-          <ul class="list-inline dev-icons">
-            <li class="list-inline-item"><i class="fab fa-html5 fa-3x"></i></li>
-            <li class="list-inline-item"><i class="fab fa-css3-alt fa-3x"></i></li>
-            <li class="list-inline-item"><i class="fab fa-node-js fa-3x"></i></li>
-            <li class="list-inline-item"><i class="fab fa-vuejs fa-3x"></i></li>
-            <li class="list-inline-item"><i class="fab fa-docker fa-3x"></i></li>
-            <li class="list-inline-item"><i class="fab fa-python fa-3x"></i></li>
-            <li class="list-inline-item"><i class="fab fa-linux fa-3x"></i></li>
-          </ul>
-
-          <br />
-
-          <!-- Workflow -->
-          <div class="subheading mb-3 text-info">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
-              Web Developer: <strong>Vue3</strong> | <strong>ASP.NET Core</strong> | <strong>C#</strong> | HTML | JavaScript | CSS | Flask | Nginx | Gunicorn
-            </li>
-            <br />
-            <li>
-              <span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
-              Development Process: <strong>Waterfall Model</strong> | <strong>Agile Model (Scrum)</strong>
-            </li>
-            <br />
-            <li>
-              <span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
-              Machine/Deep Learning: <strong>Python</strong> | <strong>Linux</strong> | <strong>Pytorch</strong> | Sensor Fusion | Object Detection | ROS
-            </li>
-            <br />
-            <li>
-              <span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
-              Development Operations: <strong>Git</strong> | Docker | Anaconda
-            </li>
-          </ul>
-        </div>
-      </section>
-      <hr class="m-0" />
-
-      <!-- Interests-->
-      <section class="resume-section" id="interests">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Interests</h2>
-          <p>
-            Apart from my enthusiasm for work, I enjoy participating in volleyball competitions. This allows me to learn teamwork and push my limits through challenges in the matches. Additionally, I have a passion for mountain climbing and diving. Engaging in these outdoor activities enables me to appreciate the beauty of nature while also enhancing my physical endurance.
-          </p>
-          <p>
-            Beyond outdoor activities, I am deeply interested in exploring new technologies and staying up to date with advancements in software development. I dedicate time to studying topics such as cloud computing, containerization, and AI applications, continuously refining my technical skills to enhance my expertise in full-stack development.
-          </p>
-        </div>
-      </section>
-      <hr class="m-0" />
-      <!-- Awards-->
-      <section class="resume-section" id="awards">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Certifications & Awards</h2>
-          <div class="row">
-            <!-- TOEIC Certification -->
-            <div class="col-md-6">
-              <div class="card shadow-sm border-0">
-                <div class="card-body d-flex align-items-center">
-                  <i class="fas fa-award text-warning fa-2x me-3"></i>
-                  <div>
-                    <h5 class="mb-1">TOEIC</h5>
-                    <span class="badge bg-primary fs-6">Score: 845</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- GEPT Certification -->
-            <div class="col-md-6">
-              <div class="card shadow-sm border-0">
-                <div class="card-body d-flex align-items-center">
-                  <i class="fas fa-medal text-success fa-2x me-3"></i>
-                  <div>
-                    <h5 class="mb-1">GEPT 中級</h5>
-                    <span class="badge bg-success fs-6">Passed</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Phi Tau Phi Honor Membership -->
-            <div class="col-md-12 mt-3">
-              <div class="card shadow-sm border-0 bg-light">
-                <div class="card-body d-flex align-items-center">
-                  <i class="fas fa-trophy text-danger fa-2x me-3"></i>
-                  <div>
-                    <h5 class="mb-1">Phi Tau Phi Honor Member</h5>
-                    <span class="badge bg-danger fs-6">113th Year, Republic of China</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- ICRA Conference Publication -->
-            <div class="col-md-12 mt-3">
-              <div class="card shadow-sm border-0 bg-light">
-                <div class="card-body d-flex align-items-center">
-                  <i class="fas fa-robot text-info fa-2x me-3"></i>
-                  <div>
-                    <h5 class="mb-1">ICRA Conference Publication</h5>
-                    <span class="badge bg-info fs-6">IEEE International Conference on Robotics and Automation</span>
-                    <p class="mb-0 text-muted">Recognized for research contributions in autonomous driving and robotics.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-          </div>
-        </div>
-      </section>
-      
-    </div>
-    <!-- Back to top button -->
-    <button type="button" id="btn-back-to-top">
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
       <i class="fas fa-arrow-up"></i>
     </button>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+
     <script src="js/scripts.js"></script>
   </body>
 </html>
-
-<style>
-  #btn-back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    transition: opacity 0.5s ease-in;
-    background-color: #3498db; /* Set the background color */
-    color: #ffffff; /* Set the text color */
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-    line-height: 50px;
-    text-align: center;
-  }
-
-  #btn-back-to-top:hover {
-    opacity: 1;
-    cursor: pointer;
-    background-color: #555555; /* Change the background color on hover */
-  }
-</style>
